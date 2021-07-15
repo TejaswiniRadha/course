@@ -1,0 +1,305 @@
+<html>
+<head>
+<title>functions in javascript</title>
+</head>
+<body>
+<h1>FUNCTIONS IN JAVASCRIPT</h1>
+<script>
+function hello()
+{
+document.write("hey hi tejaswini");
+}
+hello();
+</script>
+</body>
+</html>
+<html>
+<head>
+<title>functions dynamically</title>
+</head>
+<body>
+<p id="teju"></p>
+<button  onclick="hell0()">click here</button>
+<script>
+function hello(){
+document.getElementById("teju").innerHTML="hey tejasswininama";
+}
+</script>
+</body>
+</html>
+<html>
+<head>
+<title>functions by using return statement</title>
+</head>
+<body>
+<script>
+function hello(){
+document.write("tejaswini");
+return;
+}
+hello();
+</script>
+</body>
+</html>
+output:tejaswini
+Return Statement:Return will execute will only one statement,after the return statement no statement will not execute.
+<html>
+<head>
+<title>functions by using return statement</title>
+</head>
+<body>
+<script>
+function hello(){
+document.write("tejaswini");
+return;
+document.write("tejaswininama");
+}
+hello();
+</script>
+</body>
+</html>
+output:tejaswini
+tejaswininama will not print because document.write("tejaswininama") is placed after the return statement.
+variables in javascript:
+js variables is a case sensitive.
+there are 2 types:1.local variables
+2.global variables
+LOCAL VARIABLES:local variables are use in function only.
+GLOBAL VARIABLES:global variables are use anywhere in functions.
+<html>
+<head>
+<title>variables in javascript</title>
+</head>
+<body>
+<script>
+function add()
+{
+document.write("tejasswininama");
+}
+</script>
+</body>
+</html>
+output:nothing will print becausewe didnt invovoke the function
+<html>
+<head>
+<title>variables in javascript</title>
+</head>
+<body>
+<script>
+function add()
+{
+document.write("tejaswininama");
+}
+add();
+</script>
+</body>
+</html>
+output:tejaswininama
+
+<html>
+<head>
+<title>global variables</title>
+</head>
+<body>
+<script>
+var x=25;-globalvariable
+function add(){
+var x=20;-localvariable
+document.write(x);
+}
+add();
+document.write(x);
+</script>
+</body>
+</html>
+output:2025
+first localvariable will print
+second globalvariable will print.
+<html>
+<head>
+<title>variables</title>
+</head>
+<body>
+<script>
+var x=80;
+document.write(x);
+</script>
+</body>
+</html>
+output:80;
+<html>
+<head>
+<title>variables</title>
+</head>
+<body>
+<script>
+var x=80;
+document.write(X);
+</script>
+</body>
+</html>
+output:nothing will print.
+DataTypes in javascript:
+there are 5 datatypes:
+1.number datatype.
+2.boolean
+3.string
+4.regular expression
+5.array
+By using variables we can store string datatype also
+keyword:var 
+NUMBER DATATYPE:
+<html>
+<head>
+<title>number datatype</title>
+</head>
+<body>
+<script>
+var x=25;
+var x=25.5;
+document.write(x);
+document.write(x);
+</script>
+</body>
+</html>
+output:it prints the floating value var x=25.5 will print two times 
+25.5
+25.5
+<html>
+<head>
+<title>number datatype</title>
+</head>
+<body>
+<script>
+var x=25;
+document.write(x);
+</script>
+</body>
+</html>
+output:25
+<html>
+<head>
+<title>number datatype</title>
+</head>
+<body>
+<script>
+var x=25.5;
+document.write(x);
+</script>
+</body>
+</html>
+output:25.5 number datatype will allow floating values also.
+<html>
+<head>
+<title>string datatype</title>
+</head>
+<body>
+<script>
+var x="tejaswini";
+var y="nama";
+document.write(x);
+document.write(x);
+</script>
+</body>
+</html>
+output:tejaswininama
+output:tejaswinitejaswini
+<html>
+<head>
+<title>string datatype</title>
+</head>
+<body>
+<script>
+var y=nama;
+document.write(y);
+</script>
+</body>
+</html>
+output:nothing will print because string will place in "" only.
+<html>
+<head>
+<title>boolean datatype</title>
+</head>
+<body>
+<script>
+var name=false;
+document.write(name);
+</script>
+</body>
+</html>
+output:false
+here false is a boolean value is not a string.
+<html>
+<head>
+<title>regular expression</title>
+</head>
+<body>
+<script>
+var x=25;
+var y=35;
+var z=x+y;
+document.write(z);
+</script>
+</body>
+</html>
+output:60
+Array datatype in javascript:
+array is a special variable which can hold more than one value at a time.
+it allows disimilar values/hetreogenous values also.
+duplicate values are also allowed.
+it is based on indexing.
+-ve indexing is not possible.
+how to find size of an array:size.length;
+typeof()-  represents whichtype of variable datatype it is.
+because we have numberdatatype,string,boolean,regularexpression ....
+indexing starts from 0 to n-1.
+sizeof-use for particular index value.
+
+<html>
+<head>
+<title>array</title>
+</head>
+</body>
+<script>
+const size=[20,30,40,50,true,"tejaswini"]
+document.write(typeof(size));
+</script>
+</body>
+</html>
+output:object
+<html>
+<head>
+<title>typeof array in javascript</title>
+</head>
+</body>
+<script>
+var x=20;
+var y=20.5;
+var z="tejaswini";
+var a=true;
+document.write(typeof(z));
+</script>
+</body>
+</html>
+output:string.
+<html>
+<head>
+<title>array</title>
+</head>
+<body>
+<p id="teju"></p>
+<script>
+var x=[10,20.5,"tejaswini"]
+document.getElementById("teju").innerHTML=x;
+</script>
+</body>
+</html>
+output:10,20.5,tejaswini
+
+
+
+
+
+
+
+
